@@ -9,7 +9,7 @@
           "$hud_element_background_alpha|default": 0.4,
           "alpha": "$hud_element_background_alpha",
           "size": ["100%c + 5px", "100%c + 5px"],
-          "offset": [-15, 21], //-15-5
+          "offset": [-15, 21],
           "anchor_from": "bottom_middle",
           "anchor_to": "bottom_middle",
           "layer": 0,
