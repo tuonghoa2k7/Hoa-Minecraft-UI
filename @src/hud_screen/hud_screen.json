@@ -1,0 +1,8 @@
+{
+  "namespace": "hoamcui_hud",
+
+  "hoamcui_hud_content@elm.panel": {
+    "controls": [
+    ]
+  }
+}

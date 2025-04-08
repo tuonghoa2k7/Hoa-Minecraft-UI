@@ -1,0 +1,21 @@
+{
+  "namespace": "item_renderer",
+
+  "item_id:aux@elm.item": {
+    "$item_size|default": [16, 16],
+    "$item_id:aux|default": 65536,
+    "size": "$item_size",
+    "property_bag": {
+      "#item_id_aux": "$item_id:aux"
+    }
+  },
+
+  "item_id@elm.item": {
+    "$item_size|default": [16, 16],
+    "$item_id|default": 65536,
+    "size": "$item_size",
+    "property_bag": {
+      "#item_id_aux": "($item_id * 65536)"
+    }
+  }
+}

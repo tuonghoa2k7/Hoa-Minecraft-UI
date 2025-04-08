@@ -1,0 +1,29 @@
+{
+
+  "elipses_image": {
+    "texture": "textures/ui/inventory_icon",
+    "$elipses_image_size|default": [ 19, 13 ],
+    "offset": [ 0, -1 ]
+  },
+
+  "hotbar_panel": {
+    "modifications": [
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          {
+             "utility_tools@hoamcui:utility_tools.utility_tools": {}
+          }
+        ]
+      }
+    ]
+  },
+
+  "hud_screen": {
+    "$use_loading_bars": false,
+    "$screen_animations": [],
+    "always_accepts_input": true,
+    "render_only_when_topmost": false
+  }
+}

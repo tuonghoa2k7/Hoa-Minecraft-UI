@@ -1,0 +1,41 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "By Hoa 相樺 (@tuonghoa2k7)",
+    "name": "Hoa Minecraft UI",
+    "uuid": "6238130c-4cc6-4d59-bb5a-2767393ff696",
+    "version": [ 1, 0, 0 ],
+    "min_engine_version": [ 1, 20, 70 ]
+  },
+  "modules": [
+    {
+      "description": ";-;",
+      "type": "resources",
+      "uuid": "36611bbe-205b-4929-a157-a621c668c2de",
+      "version": [ 1, 0, 0 ]
+    }
+  ],
+  "subpacks": [
+    {
+      "folder_name": "gui",
+      "name": "With GUI",
+      "memory_tier": 0
+    },
+    {
+      "folder_name": "default",
+      "name": "Default",
+      "memory_tier": 1
+    }
+  ],
+  "metadata": {
+    "authors": [ "@tuonghoa2k7" ],
+    "license": "...",
+    "url": "..."
+  },
+  "settings": [
+    {
+      "type": "label",
+      "text": "Restart game after change pack settings\nHoa相樺\n@tuonghoa2k7"
+    }
+  ]
+}

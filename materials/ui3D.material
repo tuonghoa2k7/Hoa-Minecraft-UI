@@ -1,0 +1,8 @@
+{
+  "selection_box": {
+    "+defines": [ "LINE_STRIP" ],
+    "primitiveMode": "Line",
+    "fragmentShader": "shaders/selection_box.fragment",
+    "msaaSupport": "Both"
+  }
+}

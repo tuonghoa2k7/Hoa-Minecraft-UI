@@ -1,0 +1,84 @@
+{
+  "namespace": "elm",
+
+//Quick element
+  "panel": {
+    "type": "panel"
+  },
+
+  "stack": {
+    "type": "stack_panel"
+  },
+
+  "cl:pnl": {
+    "type": "collection_panel"
+  },
+
+  "ip:pnl": {
+    "type": "input_panel"
+  },
+
+  "scn": {
+    "type": "screen"
+  },
+
+  "tgl": {
+    "type": "toggle"
+  },
+
+  "btn": {
+    "type": "button"
+  },
+
+  "image": {
+    "type": "image"
+  },
+
+  "txt": {
+    "type": "label"
+  },
+
+  "custom": {
+    "type": "custom"
+  },
+
+  "edt.bx": {
+    "type": "edit_box"
+  },
+
+  "grd": {
+    "type": "grid"
+  },
+
+  "fct": {
+    "type": "factory"
+  },
+
+// Template Element
+  "emt:panel@elm.panel": {
+    "size": [ 0, 0 ]
+  },
+
+  "item@elm.custom": {
+    "renderer": "inventory_item_renderer"
+  },
+
+  "cl:bnt@elm.btn": {
+    "$click|default": "button.menu_select",
+    "$doubleClick|default": "button.menu_select",
+    "$disableDoubleclick|default": true,
+    "button_mappings": [
+      {
+        "mapping_type": "pressed",
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$click"
+      },
+      {
+        "mapping_type": "double_pressed",
+        "from_button_id": "button.menu_select",
+        "ignored": "$disableDoubleclick",
+        "to_button_id": "$doubleClick"
+      }
+    ]
+  }
+}

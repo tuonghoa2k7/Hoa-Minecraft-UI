@@ -1,0 +1,288 @@
+{
+  "biomes": {
+    "default": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25,
+      "water_fog_color": "#44AFF5",
+      "water_surface_color": "#44AFF5",
+      "water_fog_distance": 16,
+      "fog_ids_to_merge": [
+        "hoamcui:fog_default"
+      ],
+      "inherit_from_prior_fog": false,
+      "remove_all_prior_fog": false
+    },
+    "bamboo_jungle": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "bamboo_jungle_hills": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "basalt_deltas": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "beach": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "birch_forest": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "birch_forest_hills": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "cold_beach": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "cold_ocean": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "cold_taiga": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "cold_taiga_hills": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "cold_taiga_mutated": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "crimson_forest": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "deep_cold_ocean": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "deep_frozen_ocean": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "deep_lukewarm_ocean": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "deep_ocean": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "deep_warm_ocean": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "desert": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "desert_hills": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "extreme_hills": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "extreme_hills_edge": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "extreme_hills_mutated": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "extreme_hills_plus_trees": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "extreme_hills_plus_trees_mutated": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "flower_forest": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "forest": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "forest_hills": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "frozen_ocean": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "frozen_river": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "hell": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "ice_mountains": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "ice_plains": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "ice_plains_spikes": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "jungle": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "jungle_edge": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "jungle_hills": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "jungle_mutated": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "lukewarm_ocean": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mega_spruce_taiga": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mega_spruce_taiga_mutated": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mega_taiga": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mega_taiga_hills": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mega_taiga_mutated": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mesa": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mesa_bryce": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mesa_mutated": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mesa_plateau": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mesa_plateau_stone": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mushroom_island": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "mushroom_island_shore": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "ocean": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "plains": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "river": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "roofed_forest": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "savanna": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "savanna_mutated": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "savanna_plateau": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "soulsand_valley": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "stone_beach": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "sunflower_plains": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "swampland": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "swampland_mutated": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "taiga": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "taiga_hills": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "taiga_mutated": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "the_end": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "warm_ocean": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    },
+    "warped_forest": {
+      "fog_identifier": "hoamcui:fog_default",
+      "water_surface_transparency": 0.25
+    }
+  }
+}

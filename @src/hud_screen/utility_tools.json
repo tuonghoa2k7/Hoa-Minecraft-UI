@@ -1,0 +1,51 @@
+{
+  "namespace": "hoamcui:utility_tools",
+
+  "utility_tools@elm.emt:panel": {
+    "controls": [
+      {
+        "tools_background@elm.image": {
+          "texture": "@src/textures/ui/hud_tip_text_background",
+          "size": ["100%c + 5px", "100%c + 5px"],
+          "layer": 0,
+          "controls": [
+            {
+              "tools@elm.stack": {
+                "orientation": "vertical",
+                "size": [ "100%cm", "100%c" ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "layer": 1,
+                "$tool_item": "item_renderer.item_id",
+                "$tool_size": [16, 16],
+                "controls": [
+                  {
+                    "compass@$tool_item": {
+                      "$compass:id|default": 417,
+                      "$item_id": "$compass:id",
+                      "$item_size": "$tool_size"
+                    }
+                  },
+                  {
+                    "clock@$tool_item": {
+                      "$clock:id|default": 419,
+                      "$item_id": "$clock:id",
+                      "$item_size": "$tool_size"
+                    }
+                  },
+                  {
+                    "recovery_compass@$tool_item": {
+                      "$recovery-compass:id|default": 683,
+                      "$item_id": "$recovery-compass:id",
+                      "$item_size": "$tool_size"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
