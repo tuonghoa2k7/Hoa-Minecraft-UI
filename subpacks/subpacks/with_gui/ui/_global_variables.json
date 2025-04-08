@@ -1,0 +1,18 @@
+{
+
+  "$light_button_default_text_color": [ 0.902, 0.902, 0.902 ],
+  "$light_button_hover_text_color": [ 0.902, 0.902, 0.902 ],
+
+  "$light_toggle_default_text_color": [ 0.902, 0.902, 0.902 ],
+  "$light_toggle_hover_text_color": [ 0.902, 0.902, 0.902 ],
+  "$light_toggle_checked_default_text_color": [ 0.902, 0.902, 0.902 ],
+  "$light_toggle_checked_hover_text_color": [ 0.902, 0.902, 0.902 ],
+
+  "$light_button_secondary_default_text_color": [ 0.902, 0.902, 0.902 ],
+  "$light_button_secondary_hover_text_color": [ 0.902, 0.902, 0.902 ],
+  "$light_button_secondary_pressed_text_color": [ 0.902, 0.902, 0.902 ],
+
+  "$title_text_color": [ 0.902, 0.902, 0.902 ],
+  "$pocket_title_text_color": [ 0.902, 0.902, 0.902 ]
+
+}

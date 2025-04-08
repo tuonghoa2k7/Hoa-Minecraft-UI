@@ -6,7 +6,12 @@
       {
         "tools_background@elm.image": {
           "texture": "@src/textures/ui/hud_tip_text_background",
+          "$hud_element_background_alpha|default": 0.4,
+          "alpha": "$hud_element_background_alpha",
           "size": ["100%c + 5px", "100%c + 5px"],
+          "offset": [-15, 21], //-15-5
+          "anchor_from": "bottom_middle",
+          "anchor_to": "bottom_middle",
           "layer": 0,
           "controls": [
             {
@@ -20,23 +25,24 @@
                 "$tool_size": [16, 16],
                 "controls": [
                   {
-                    "compass@$tool_item": {
-                      "$compass:id|default": 417,
-                      "$item_id": "$compass:id",
+                    "clock@$tool_item": {
+                      "$id:clock_item|default": 419,
+                      "$item_id": "$id:clock_item",
                       "$item_size": "$tool_size"
                     }
                   },
                   {
-                    "clock@$tool_item": {
-                      "$clock:id|default": 419,
-                      "$item_id": "$clock:id",
+                    "compass@$tool_item": {
+                      "$id:compass_item|default": 417,
+                      "$item_id": "$id:compass_item",
                       "$item_size": "$tool_size"
                     }
                   },
                   {
                     "recovery_compass@$tool_item": {
-                      "$recovery-compass:id|default": 683,
-                      "$item_id": "$recovery-compass:id",
+                      "ignored": "($is_on_3p_server)",
+                      "$id:recovery_compass_item|default": 683,
+                      "$item_id": "$id:recovery_compass_item",
                       "$item_size": "$tool_size"
                     }
                   }

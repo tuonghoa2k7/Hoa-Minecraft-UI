@@ -10,10 +10,10 @@
     "modifications": [
       {
         "array_name": "controls",
-        "operation": "insert_back",
+        "operation": "insert_front",
         "value": [
           {
-             "utility_tools@hoamcui:utility_tools.utility_tools": {}
+            "utility_tools@hoamcui:utility_tools.utility_tools": {}
           }
         ]
       }

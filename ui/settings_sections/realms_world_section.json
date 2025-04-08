@@ -1,0 +1,22 @@
+{
+  "panel_content": {
+    "modifications": {
+      "array_name": "controls",
+      "operation": "insert_front",
+      "value": [
+        {
+          "level_seed_selector@settings_common.option_text_edit_with_button": {
+            "$tts_section_header": "createWorldScreen.worldPreferences",
+            "ignored": "($education_edition or not $is_seeds_enabled)",
+            "$option_label": "createWorldScreen.levelSeed",
+            "$option_binding_name": "#world_seed",
+            "$option_enabled_binding_name": "#world_seed_enabled",
+            "$text_box_name": "world_seed_text_box",
+            "$pressed_button_name": "choose_ugc_level_seed",
+            "$button_tts_header": "accessibility.settings.chooseSeed"
+          }
+        }
+      ]
+    }
+  }
+}

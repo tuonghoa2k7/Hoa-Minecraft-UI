@@ -1,5 +1,11 @@
 {
-  "$fill_alpha": 0.4,
+  "$id:compass_item": 417,
+  "$id:clock_item": 419,
+  "$id:recovery_compass_item": 683,
+
+  "$hud_element_background_alpha": 0.6,
+
+  "$fill_alpha": 0.8,
   "$settings_gray_background_visible": false,
   "$settings_gray_background_alpha": 0.4
 }
