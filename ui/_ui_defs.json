@@ -4,6 +4,7 @@
     "@src/ui/item_renderer.json",
 
     "@src/ui/hud_screen/hud_screen.json",
+    "@src/ui/hud_screen/positions.json",
     "@src/ui/hud_screen/utility_tools.json"
   ]
 }
