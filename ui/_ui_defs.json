@@ -1,9 +1,9 @@
 {
   "ui_defs": [
-    "@src/element.json",
-    "@src/item_renderer.json",
+    "@src/ui/element.json",
+    "@src/ui/item_renderer.json",
 
-    "@src/hud_screen/hud_screen.json",
-    "@src/hud_screen/utility_tools.json"
+    "@src/ui/hud_screen/hud_screen.json",
+    "@src/ui/hud_screen/utility_tools.json"
   ]
 }
