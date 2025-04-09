@@ -1,4 +1,5 @@
+map.position=Position: %s, %s, %s
 map.chunk=Chunk
 map.chunkIn=in
-map.overworld=Overworld
-map.nether=Nether
+map.overworldPosition=Overworld position
+map.netherPosition=Nether position

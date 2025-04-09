@@ -17,6 +17,47 @@
     ]
   },
 
+  "number_of_days_played": {
+    "$position_content_background_alpha|default": 0.4,
+    "alpha": "$position_content_background_alpha"
+  },
+
+  "anim_chat_txt_alpha": {
+    "anim_type": "alpha",
+    "easing": "in_quart",
+    "duration": 1,
+    "from": 1,
+    "to": 0
+  },
+
+  "anim_chat_txt_wait": {
+    "anim_type": "wait",
+    "duration": "$chat_item_lifetime",
+    "next": "@hud.anim_chat_txt_alpha"
+  },
+
+  "anim_chat_bg_alpha": {
+    "anim_type": "alpha",
+    "easing": "in_quart",
+    "destroy_at_end": "chat_grid_item",
+    "duration": 1,
+    "$chat_background_alpha|default": 0.6,
+    "from": "$chat_background_alpha",
+    "to": 0
+  },
+
+  "anim_chat_bg_wait": {
+    "anim_type": "wait",
+    "duration": "$chat_item_lifetime",
+    "next": "@hud.anim_chat_bg_alpha"
+  },
+
+  "chat_grid_item/chat_background": {
+    "$chat_background_alpha|default": 0.6,
+    "alpha": "$chat_background_alpha"
+  },
+
+
   "elipses_image": {
     "texture": "textures/ui/inventory_icon",
     "$elipses_image_size|default": [ 19, 13 ],

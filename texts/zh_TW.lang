@@ -1,0 +1,5 @@
+map.position=位置: %s, %s, %s	#
+map.chunk=區塊	#
+map.chunkIn=在	#
+map.overworldPosition=世界位置	#
+map.netherPosition=地獄位置	#

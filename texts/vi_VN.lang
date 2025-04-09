@@ -1,0 +1,6 @@
+map.position=Tọa độ: %s, %s, %s	#
+map.chunk=Tọa độ Chunk	#
+map.chunkIn=in	#
+map.overworldPosition=Tọa độ Overworld	#
+map.netherPosition=Tọa độ Nether	#
+	

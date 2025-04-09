@@ -4,6 +4,8 @@
   "$id:recovery_compass_item": 683,
 
   "$hud_element_background_alpha": 0.6,
+  "$position_content_background_alpha": 0.4,
+  "$chat_background_alpha": 0.4,
 
   "$fill_alpha": 0.8,
   "$settings_gray_background_visible": false,
