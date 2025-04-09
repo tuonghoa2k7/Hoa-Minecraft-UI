@@ -1,4 +1,21 @@
 {
+  "player_position": {
+    "alpha": false,
+    "size": ["100%cm", "100%cm"],
+    "bindings": [
+      {
+        "binding_name": "#player_position_visible",
+        "binding_name_override": "#visible",
+        "binding_condition": "always",
+        "binding_type": "global"
+      }
+    ],
+    "controls": [
+      {
+        "positon@hoamcui:position_content": {}    
+      }
+    ]
+  },
 
   "elipses_image": {
     "texture": "textures/ui/inventory_icon",

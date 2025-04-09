@@ -1,9 +1,9 @@
 {
   "format_version": 2,
   "header": {
-    "description": "By Hoa 相樺 (@tuonghoa2k7)",
+    "description": "By Hoa相樺 (@tuonghoa2k7)",
     "name": "Hoa Minecraft UI",
-    "uuid": "6238130c-4cc6-4d59-bb5a-2767393ff696",
+    "uuid": "00968389-5fd9-4d51-8f56-afed8c6d941f",
     "version": [ 1, 0, 0 ],
     "min_engine_version": [ 1, 20, 70 ]
   },
@@ -11,7 +11,7 @@
     {
       "description": ";-;",
       "type": "resources",
-      "uuid": "36611bbe-205b-4929-a157-a621c668c2de",
+      "uuid": "308670d4-9bc5-4530-9c52-e15ffd719f7f",
       "version": [ 1, 0, 0 ]
     }
   ],
@@ -35,7 +35,7 @@
   "settings": [
     {
       "type": "label",
-      "text": "Restart game after change pack settings\nHoa相樺\n@tuonghoa2k7"
+      "text": "Remember to restart game after change the pack settings\n\nHoa相樺\n@tuonghoa2k7"
     }
   ]
 }
