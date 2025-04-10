@@ -1,5 +1,5 @@
 {
-  "namespace": "hoamcui:position",
+  "namespace": "hoamcui:positions",
 
   "position_label@elm.label": {
     "layer": 1,
@@ -25,9 +25,9 @@
 
   "position_content@elm.stack": {
     "size": ["100%cm", "100%c"],
-    "$image|default": "hoamcui:position.position_image",
-    "$label|default": "hoamcui:position.position_label",
-    "$stack|default": "hoamcui:position.position_stack",
+    "$image|default": "hoamcui:positions.position_image",
+    "$label|default": "hoamcui:positions.position_label",
+    "$stack|default": "hoamcui:positions.position_stack",
     "controls": [
       {
         "player_position@$image": {

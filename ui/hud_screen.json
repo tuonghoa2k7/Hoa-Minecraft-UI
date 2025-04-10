@@ -12,7 +12,7 @@
     ],
     "controls": [
       {
-        "position_content@hoamcui:position.position_content": {}    
+        "position_content@hoamcui:positions.position_content": {}    
       }
     ]
   },
@@ -20,20 +20,6 @@
   "number_of_days_played": {
     "$position_content_background_alpha|default": 0.4,
     "alpha": "$position_content_background_alpha"
-  },
-
-  "anim_chat_txt_alpha": {
-    "anim_type": "alpha",
-    "easing": "in_quart",
-    "duration": 1,
-    "from": 1,
-    "to": 0
-  },
-
-  "anim_chat_txt_wait": {
-    "anim_type": "wait",
-    "duration": "$chat_item_lifetime",
-    "next": "@hud.anim_chat_txt_alpha"
   },
 
   "anim_chat_bg_alpha": {
@@ -46,17 +32,28 @@
     "to": 0
   },
 
-  "anim_chat_bg_wait": {
-    "anim_type": "wait",
-    "duration": "$chat_item_lifetime",
-    "next": "@hud.anim_chat_bg_alpha"
-  },
-
   "chat_grid_item/chat_background": {
     "$chat_background_alpha|default": 0.6,
     "alpha": "$chat_background_alpha"
   },
 
+  "centered_gui_elements": {
+    "modifications": [
+      {
+        "control_name": "hud_player_rend_desktop",
+        "operation": "remove"
+      }
+    ]
+  },
+
+  "not_centered_gui_elements": {
+    "modifications": [
+      {
+        "control_name": "hud_player_rend_pocket",
+        "operation": "remove"
+      }
+    ]
+  },
 
   "elipses_image": {
     "texture": "textures/ui/inventory_icon",
@@ -71,9 +68,22 @@
         "operation": "insert_front",
         "value": [
           {
-            "utility_tools@hoamcui:utility_tools.utility_tools": {}
+            "hoamcui:hotbar_left_content@hoamcui:hud.hotbar_left_content": {}
           }
         ]
+      }
+    ]
+  },
+
+  "root_panel/chat_stack": {
+    "modifications": [
+      {
+        "control_name": "paper_doll_padding",
+        "operation": "remove"
+      },
+      {
+        "control_name": "paper_doll_padding_living_room",
+        "operation": "remove"
       }
     ]
   },

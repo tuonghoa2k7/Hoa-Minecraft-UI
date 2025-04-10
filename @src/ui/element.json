@@ -53,13 +53,18 @@
     "type": "factory"
   },
 
-  "emt:panel@elm.panel": {
+  "empty_panel@elm.panel": {
     "size": [ 0, 0 ]
   },
 
   "item@elm.custom": {
     "renderer": "inventory_item_renderer"
   },
+
+  "padding@elm.panel": {
+    "size": [2, 2]
+  },
+
 
   "cl:bnt@elm.btn": {
     "$click|default": "button.menu_select",
