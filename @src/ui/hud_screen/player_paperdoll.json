@@ -25,7 +25,7 @@
   // },
 
   "player_paperdoll@elm.image": {
-    "texture": "@src/textures/ui/hud_tip_text_background",
+    "texture": "@src/textures/ui/hud_element_background",
     "$hud_element_background_alpha|default": 0.4,
     "alpha": "$hud_element_background_alpha",
     "size": ["100%c + 22px", "100%c + 6px"],
