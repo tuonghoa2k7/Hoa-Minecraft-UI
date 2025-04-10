@@ -1,6 +1,29 @@
 {
   "namespace": "hoamcui:player_paperdoll",
 
+  // "player_nametag@elm.panel": {
+  //   "size": ["100%cm", "100%cm"],
+  //   "anchor_from": "center",
+  //   "anchor_to": "center",
+  //   "controls": [
+  //     {
+  //       "nametag": {
+  //         "type": "custom",
+  //         "renderer": "name_tag_renderer",
+  //         "layer": 2,
+  //         "anchor_from": "top_middle",
+  //         "anchor_to": "bottom_middle",
+  //         "size": [ 8, 8 ],
+  //         "bindings": [
+  //           {
+  //             "binding_name": "#playername"
+  //           }
+  //         ]
+  //       }
+  //     }
+  //   ]
+  // },
+
   "player_paperdoll@elm.image": {
     "texture": "@src/textures/ui/hud_tip_text_background",
     "$hud_element_background_alpha|default": 0.4,
@@ -15,7 +38,7 @@
           "size": [24, 48],
           "anchor_from": "bottom_middle",
           "anchor_to": "bottom_middle",
-          "offset": [0, -13],
+          "offset": [0, -14],
           "controls": [
             {
               "paperdoll_renderer": {
