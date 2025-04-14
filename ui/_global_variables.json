@@ -3,7 +3,7 @@
   "$id:clock_item": 419,
   "$id:recovery_compass_item": 683,
 
-  "$hud_element_background_alpha": 0.6,
+  "$hud_element_background_alpha": 0.4,
   "$position_content_background_alpha": 0.4,
   "$chat_background_alpha": 0.4,
 

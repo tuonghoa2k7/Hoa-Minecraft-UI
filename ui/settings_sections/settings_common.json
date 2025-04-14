@@ -4,6 +4,5 @@
     "$settings_gray_background_alpha|default": 1,
     "ignored": "(not $settings_gray_background_visible)",
     "alpha": "$settings_gray_background_alpha"
-    
   }
 }

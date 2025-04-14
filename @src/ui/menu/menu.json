@@ -2,6 +2,7 @@
   "namespace": "hoamcui:menu",
 
   "hud_menu@elm.panel": {
+    "size": ["100%", "100%"],
     "layer": 100,
     "controls": [
       {
@@ -12,19 +13,115 @@
           "alpha": "$hud_element_background_alpha",
           "controls": [
             {
-              "menu_title_background@elm.image": {
-                "texture": "@src/textures/ui/hud_element_background",
-                "size": ["100% - 4px", "12%"],
-                "anchor_from": "top_middle",
-                "anchor_to": "top_middle",
-                "$hud_element_background_alpha|default": 0.4,
-                "alpha": "$hud_element_background_alpha",
+              "menu_stack@elm.stack": {
+                "orientation": "vertical",
+                "size": [ "100% - 16px", "100% - 16px" ],
+                "anchor_from": "center",
+                "anchor_to": "center",
+                "layer": 101,
                 "controls": [
                   {
-                    "menu_title_text@elm.label": {
-                      "text": "menu_title",
-                      "size": ["default", 24],
-                      "font_size": "large"
+                    "menu_head@elm.panel": {
+                      "size": ["100%", "10%"],
+                      "anchor_from": "top_middle",
+                      "anchor_to": "top_middle",
+                      "layer": 102,
+                      "controls": [
+                        {
+                          "menu_title_background@elm.image": {
+                            "texture": "@src/textures/ui/hud_element_background",
+                            "size": ["100%", "100%"],
+                            "anchor_from": "center",
+                            "anchor_to": "center",
+                            "$hud_element_background_alpha|default": 0.4,
+                            "alpha": "$hud_element_background_alpha",
+                            "controls": [
+                              {
+                                "menu_title_text@elm.label": {
+                                  "text": "menu_title",
+                                  "font_size": "large"
+                                }
+                              }
+                            ]
+                          }
+                        },
+                        {
+                          "menu_close_button_background@elm.image": {
+                            "texture": "@src/textures/ui/hud_element_background",
+                            "size": ["8% - 6px", "100% - 6px"],
+                            "anchor_from": "right_middle",
+                            "anchor_to": "right_middle",
+                            "offset": [-3, 0],
+                            "$hud_element_background_alpha|default": 0.4,
+                            "alpha": "$hud_element_background_alpha",
+                            "controls": [
+                              {
+                                "menu_close_button_text@elm.label": {
+                                  "text": "X",
+                                  "size": ["default", 32],
+                                  "font_type": "MinecraftTen",
+                                  "font_size": "large"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "menu_padding@elm.padding": {
+                      "size": [0, "1%"]
+                    }
+                  },
+                  {
+                    "menu_content@elm.panel": {
+                      "size": ["100%", "74%"],
+                      "anchor_from": "top_middle",
+                      "anchor_to": "top_middle",
+                      "controls": [
+                        {
+                          "menu_content_background@elm.image": {
+                            "texture": "@src/textures/ui/hud_element_background",
+                            "size": ["100%", "100%"],
+                            "anchor_from": "top_middle",
+                            "anchor_to": "top_middle",
+                            "$hud_element_background_alpha|default": 0.4,
+                            "alpha": "$hud_element_background_alpha",
+                            "controls": [
+                              {
+                                "menu_content_text@elm.label": {
+                                  "text": "menu_content",
+                                  "font_size": "extra_large"
+                                }
+                              }
+                            ]
+                          }
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "menu_padding@elm.padding": {
+                      "size": [0, "1%"]
+                    }
+                  },
+                  {
+                    "menu_title_background@elm.image": {
+                      "texture": "@src/textures/ui/hud_element_background",
+                      "size": ["100%", "14%"],
+                      "anchor_from": "top_middle",
+                      "anchor_to": "top_middle",
+                      "$hud_element_background_alpha|default": 0.4,
+                      "alpha": "$hud_element_background_alpha",
+                      "controls": [
+                        {
+                          "menu_title_text@elm.label": {
+                            "text": "menu_button*3",
+                            "font_size": "extra_large"
+                          }
+                        }
+                      ]
                     }
                   }
                 ]
