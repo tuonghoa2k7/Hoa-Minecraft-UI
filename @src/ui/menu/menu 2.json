@@ -1,0 +1,162 @@
+{
+  "namespace": "uwu_menu",
+
+  "open&close_menu_button@uwu_common.button_with_text": {
+    "$button_size": [ 28, 28 ],
+    "$radio_toggle_group": true,
+    "$toggle_view_binding_name": "uwu_menu",
+    "$toggle_name": "uwu_menu"
+  },
+
+  "open_menu_button@uwu_menu.open&close_menu_button": {
+    "$button_size": [ 24, 24 ],
+    "$anchor_button": "bottom_left",
+    "$button_offset": [ 2, -2 ],
+    "$text": "M",
+    "$font": "MinecraftTen",
+    "$font_scale": 1.5,
+    "$text_offset": [ 0, -1.5 ],
+    "$toggle_group_forced_index": 1,
+    "$haha": "inv",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "$haha",
+        "source_property_name": "(not #toggle_state)",
+        "target_property_name": "#visible"
+      },
+      {
+        "binding_type": "view",
+        "source_control_name": "uwu_menu",
+        "source_property_name": "(not #toggle_state)",
+        "target_property_name": "#visible"
+      }
+    ],
+    "$button_mappings": [
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "$haha",
+        "mapping_type": "double_pressed"
+      },
+      {
+        "from_button_id": "button.menu_select",
+        "to_button_id": "button.null_select",
+        "mapping_type": "double_pressed"
+      }
+    ]
+  },
+
+  "confirm_icon_wrapper": {
+    "type": "panel",
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "size": [ "100% - 2px", "100% - 2px" ],
+    "controls": [
+      {
+        "stack_panel": {
+          "type": "stack_panel",
+          "orientation": "horizontal",
+          "controls": [
+            {
+              "icon_panel": {
+                "type": "panel",
+                "size": [ "100%c", "100%" ],
+                "controls": [
+                  {
+                    "confirm_icon": {
+                      "layer": 1,
+                      "type": "image",
+                      "texture": "textures/ui/confirm",
+                      "size": [ 13, 14 ]
+                    }
+                  }
+                ]
+              }
+            },
+            {
+              "offset": {
+                "type": "panel",
+                "size": [ 4, "100%" ]
+              }
+            },
+            {
+              "label_panel": {
+                "type": "panel",
+                "size": [ "100%c", "100%" ],
+                "controls": [
+                  {
+                    "label": {
+                      "type": "label",
+                      "text": "uwuMenu.confirmMenu",
+                      "color": "$text_color"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "confirm_button@uwu_menu.open&close_menu_button": {
+    "$button_type_panel": "uwu_menu.confirm_icon_wrapper",
+    "$default_border_visible": true,
+    "$default_texture": "textures/ui/button_borderless_light",
+    "$hover_texture": "textures/ui/button_borderless_light",
+    "$pressed_texture": "textures/ui/button_borderless_lightpressed",
+    "$pressed_no_hover_texture": "textures/ui/button_borderless_lightpressed",
+    "$toggle_group_forced_index": 2
+  },
+
+  "main_stack_panel": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [ "100%", "100%" ],
+    "layer": 1,
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "controls": [
+      {
+        "scroll_content@common.scrolling_panel": {
+          "anchor_to": "top_left",
+          "anchor_from": "top_left",
+          "$scrolling_content": "uwu_menu_content.menu_buttons_content",
+          "$scroll_size": [ 5, "100% - 4px" ],
+          "$scrolling_pane_size": [ "100% - 4px", "100% - 2px" ],
+          "$scrolling_pane_offset": [ 2, 0 ],
+          "$scroll_bar_right_padding_size": [ 0, 0 ],
+          "$show_background": false,
+          "$always_handle_scrolling": true
+        }
+      }
+    ]
+  },
+
+  "menu_screen_content": {
+    "type": "panel",
+    "bindings": [
+      {
+        "binding_type": "view",
+        "source_control_name": "uwu_menu",
+        "source_property_name": "#toggle_state",
+        "target_property_name": "#visible"
+      }
+    ],
+    "$uwu_menu_control|default": "uwu_menu.main_stack_panel",
+    "$show_close_button": false,
+    "controls": [
+      {
+        "menu_dialog@common_dialogs.main_panel_one_button": {
+          "type": "input_panel",
+          "$text_name": "uwuMenu.titleMenu",
+          "$child_control": "$uwu_menu_control",
+          "$button_panel": "uwu_menu.confirm_button",
+          "size": [ "55% + 30px", "85%" ],
+          "prevent_touch_input": true
+        }
+      }
+    ]
+  }
+}

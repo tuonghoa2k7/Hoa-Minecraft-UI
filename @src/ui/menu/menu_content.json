@@ -1,0 +1,82 @@
+{
+  "namespace": "uwu_menu_content",
+
+  "menu_button@uwu_common.button_with_text": {
+    "$button_size": [ "100%", 32 ]
+  },
+
+//Gamma
+  "gamma_button@menu_button": {
+    "$text": "uwuMenu.gammaToggle",
+    "$gamma_toggle_default_state|default": false,
+    "$toggle_default_state": "$gamma_toggle_default_state",
+    "$toggle_view_binding_name": "enable_gamma"
+  },
+
+//Safe zone
+  "safe_zone_button@menu_button": {
+    "$text": "uwuMenu.safeZoneToggle",
+    "$safe_zone_toggle_default_state|default": false,
+    "$toggle_default_state": "$safe_zone_toggle_default_state",
+    "$toggle_view_binding_name": "enable_safe_zone"
+  },
+
+//Chunk
+  "chunk_position_button@menu_button": {
+    "$text": "uwuMenu.chunkToggle",
+    "$chunk_position_toggle_default_state|default": false,
+    "$toggle_default_state": "$chunk_position_toggle_default_state",
+    "$toggle_view_binding_name": "enable_chunk_position"
+  },
+
+//Overworld
+  "overworld_position_button@menu_button": {
+    "$text": "uwuMenu.overworldToggle",
+    "$overworld_position_toggle_default_state|default": false,
+    "$toggle_default_state": "$overworld_position_toggle_default_state",
+    "$toggle_view_binding_name": "enable_overworld_position"
+  },
+
+//Nether
+  "nether_position_button@menu_button": {
+    "$text": "uwuMenu.netherToggle",
+    "$nether_position_toggle_default_state|default": false,
+    "$toggle_default_state": "$nether_position_toggle_default_state",
+    "$toggle_view_binding_name": "enable_nether_position"
+  },
+
+//Recovery compass
+  "recovery_compass_button@menu_button": {
+    "$text": "item.recovery_compass.name",
+    "$recovery_compass_toggle_default_state|default": false,
+    "$toggle_default_state": "$recovery_compass_toggle_default_state",
+    "$toggle_view_binding_name": "enable_recovery_compass"
+  },
+
+//Inventory overlay
+  "inventory_overlay_button@menu_button": {
+    "$text": "uwuMenu.inventoryoverlayToggle",
+    "$inventoy_overlay_toggle_default_state|default": true,
+    "$toggle_default_state": "$inventoy_overlay_toggle_default_state",
+    "$toggle_view_binding_name": "enable_inventory_overlay"
+  },
+
+//Menu buttons content
+  "menu_buttons_content@uwu_menu_config.menu_configs_content": {
+    "type": "stack_panel",
+    "orientation": "vertical",
+    "size": [ "100% - 4px", "100%c" ],
+    "anchor_from": "top_left",
+    "anchor_to": "top_left",
+    "offset": [ 2, 0 ],
+    "controls": [
+      { "gamma_btn@uwu_menu_content.gamma_button": {} },
+      { "safe_zone_btn@uwu_menu_content.safe_zone_button": {} },
+      { "chunk_btn@uwu_menu_content.chunk_position_button": {} },
+      { "overworld_btn@uwu_menu_content.overworld_position_button": {} },
+      { "nether_btn@uwu_menu_content.nether_position_button": {} },
+      { "recovery_compass_btn@uwu_menu_content.recovery_compass_button": {} },
+      { "inventory_overlay_btn@uwu_menu_content.inventory_overlay_button": {} }
+    ]
+  }
+}

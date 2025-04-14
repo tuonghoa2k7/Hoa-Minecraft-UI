@@ -1,0 +1,13 @@
+{
+  "namespace": "uwu_menu_config",
+
+  "menu_configs_content": {
+    "$gamma_toggle_default_state": false,
+    "$safe_zone_toggle_default_state": false,
+    "$chunk_position_toggle_default_state": false,
+    "$overworld_position_toggle_default_state": false,
+    "$nether_position_toggle_default_state": false,
+    "$recovery_compass_toggle_default_state": false,
+    "$inventoy_overlay_toggle_default_state": true
+  }
+}

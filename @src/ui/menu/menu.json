@@ -1,0 +1,38 @@
+{
+  "namespace": "hoamcui:menu",
+
+  "hud_menu@elm.panel": {
+    "layer": 100,
+    "controls": [
+      {
+        "menu_background@elm.image": {
+          "texture": "@src/textures/ui/hud_element_background",
+          "size": ["64%", "88%"],
+          "$hud_element_background_alpha|default": 0.4,
+          "alpha": "$hud_element_background_alpha",
+          "controls": [
+            {
+              "menu_title_background@elm.image": {
+                "texture": "@src/textures/ui/hud_element_background",
+                "size": ["100% - 4px", "12%"],
+                "anchor_from": "top_middle",
+                "anchor_to": "top_middle",
+                "$hud_element_background_alpha|default": 0.4,
+                "alpha": "$hud_element_background_alpha",
+                "controls": [
+                  {
+                    "menu_title_text@elm.label": {
+                      "text": "menu_title",
+                      "size": ["default", 24],
+                      "font_size": "large"
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}
