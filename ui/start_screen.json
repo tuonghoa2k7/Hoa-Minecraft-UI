@@ -6,7 +6,7 @@
         "operation": "insert_front",
         "value": [
           {
-            "test_menu@hoamcui:menu.hud_menu": {}
+            "menu@hoamcui:menu.menu": {}
           }
         ]
       }

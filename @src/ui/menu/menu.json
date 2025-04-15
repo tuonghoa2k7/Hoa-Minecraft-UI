@@ -1,7 +1,7 @@
 {
   "namespace": "hoamcui:menu",
 
-  "hud_menu@elm.panel": {
+  "menu@elm.panel": {
     "size": ["100%", "100%"],
     "layer": 100,
     "controls": [
