@@ -35,14 +35,13 @@
     "controls": [
       {
         "paperdoll@elm.panel": {
-          "size": [24, 48],
-          "anchor_from": "bottom_middle",
-          "anchor_to": "bottom_middle",
-          "offset": [0, -14],
+          "size": [40, 80],
+          // "anchor_from": "center",
+          // "anchor_to": "center",
+          "offset": [0, -18],
           "controls": [
             {
-              "paperdoll_renderer": {
-                "type": "custom",
+              "paperdoll_renderer@elm.custom": {
                 "renderer": "live_player_renderer",
                 "layer": 1,
                 "animation_reset_name": "screen_animation_reset",

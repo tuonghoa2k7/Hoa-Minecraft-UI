@@ -9,6 +9,10 @@
     "type": "stack_panel"
   },
 
+  "scroll": {
+    "type": "scroll_view"
+  },
+
   "cl:pnl": {
     "type": "collection_panel"
   },
