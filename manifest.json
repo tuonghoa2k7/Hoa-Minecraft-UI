@@ -1,8 +1,8 @@
 {
   "format_version": 2,
   "header": {
-    "description": "By Hoa相樺 (@tuonghoa2k7)",
-    "name": "Hoa Minecraft UI",
+    "description": "By @tuonghoa2k7（Hoa相樺）",
+    "name": "HoaMinecraftUI",
     "uuid": "00968389-5fd9-4d51-8f56-afed8c6d941f",
     "version": [ 1, 0, 0 ],
     "min_engine_version": [ 1, 20, 70 ]
