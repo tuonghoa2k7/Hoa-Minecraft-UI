@@ -1,4 +1,4 @@
-name: Auto build mcpack and release
+name: Build mcpack and release
 
 on:
   push:
