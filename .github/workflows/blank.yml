@@ -27,7 +27,7 @@ jobs:
     - name: Create or update GitHub release
       uses: softprops/action-gh-release@v2
       with:
-        tag_name: Package from: ${{ github.sha }}
+        tag_name: Package
         release_name: Latest Build
         body: |
           This release is auto-generated from the latest commit to `main`.
