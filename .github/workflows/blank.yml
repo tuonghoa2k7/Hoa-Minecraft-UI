@@ -12,6 +12,11 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
+    - name: Show current directory and files
+      run: |
+        pwd
+        ls -R
+        
     - name: Zip and rename resource pack
       run: |
         cd Hoa-Minecraft-UI/
