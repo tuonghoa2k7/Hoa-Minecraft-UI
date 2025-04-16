@@ -1,4 +1,4 @@
-name: Auto Build & Release MCPack
+name: Auto build mcpack and release
 
 on:
   push:
@@ -27,7 +27,7 @@ jobs:
     - name: Create or update GitHub release
       uses: softprops/action-gh-release@v2
       with:
-        tag_name: auto-release
+        tag_name: Package from: ${{ github.sha }}
         release_name: Latest Build
         body: |
           This release is auto-generated from the latest commit to `main`.
