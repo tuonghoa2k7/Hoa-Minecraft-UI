@@ -19,7 +19,7 @@ jobs:
         
     - name: Zip and change to .mcpack
       run: |
-        cd Hoa-Minecraft-UI/Hoa-Minecraft-UI
+        cd /home/runner/work/Hoa-Minecraft-UI/Hoa-Minecraft-UI
         zip -r ../Hoa-Minecraft-UI.zip .
         cd ..
         mv Hoa-Minecraft-UI.zip Hoa-Minecraft-UI.mcpack
