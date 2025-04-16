@@ -24,10 +24,12 @@ jobs:
         cd ..
         mv Hoa-Minecraft-UI.zip Hoa-Minecraft-UI.mcpack
 
+    
     - name: Create or Update release
       uses: softprops/action-gh-release@v2
       with:
         tag_name: Package
+        target_commitish: main
         release_name: Latest Build
         body: |
           This release is auto-build from the latest commit to `main`.
