@@ -12,7 +12,7 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Show current directory and files
+    - name: Show directory and files
       run: |
         pwd
         ls -R
@@ -24,7 +24,7 @@ jobs:
         cd ..
         mv Hoa-Minecraft-UI.zip Hoa-Minecraft-UI.mcpack
 
-    - name: Create or update GitHub release
+    - name: Create or Update release
       uses: softprops/action-gh-release@v2
       with:
         tag_name: Package
@@ -37,9 +37,3 @@ jobs:
           /home/runner/work/Hoa-Minecraft-UI/Hoa-Minecraft-UI.mcpack
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-    - name: Show current directory and files
-      run: |
-        pwd
-        ls -R
-    
