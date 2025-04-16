@@ -19,13 +19,6 @@ jobs:
         cd ..
         mv resource_pack.zip resource_pack.mcpack
 
-    - name: Zip and rename behavior pack
-      run: |
-        cd behavior_pack
-        zip -r ../behavior_pack.zip .
-        cd ..
-        mv behavior_pack.zip behavior_pack.mcpack
-
     - name: Create or update GitHub release
       uses: softprops/action-gh-release@v2
       with:
