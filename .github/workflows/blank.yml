@@ -12,10 +12,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    # - name: Show current directory and files
-      # run: |
-        # pwd
-        # ls -R
+    - name: Show current directory and files
+      run: |
+        pwd
+        ls -R
         
     - name: Zip and change to .mcpack
       run: |
@@ -30,10 +30,16 @@ jobs:
         tag_name: Package
         release_name: Latest Build
         body: |
-          This release is auto-generated from the latest commit to `main`.
+          This release is auto-build from the latest commit to `main`.
 
           Latest commit from: ${{ github.sha }}
         files: |
           /home/runner/work/Hoa-Minecraft-UI/Hoa-Minecraft-UI.mcpack
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+    - name: Show current directory and files
+      run: |
+        pwd
+        ls -R
+    
