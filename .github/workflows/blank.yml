@@ -14,7 +14,7 @@ jobs:
 
     - name: Zip and rename resource pack
       run: |
-        cd ./Hoa-Minecraft-UI
+        cd Hoa-Minecraft-UI/
         zip -r ../Hoa-Minecraft-UI.zip .
         cd ..
         mv Hoa-Minecraft-UI.zip Hoa-Minecraft-UI.mcpack
