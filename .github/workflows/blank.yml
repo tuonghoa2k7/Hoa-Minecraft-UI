@@ -36,4 +36,4 @@ jobs:
         files: |
           /home/runner/work/Hoa-Minecraft-UI/Hoa-Minecraft-UI.mcpack
       env:
-        GITHUB_TOKEN: ${{ secrets.RELEASE_MCPACK }}
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
