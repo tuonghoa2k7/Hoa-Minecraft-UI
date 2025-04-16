@@ -1,36 +1,42 @@
-# This is a basic workflow to help you get started with Actions
+name: Auto Build & Release MCPack
 
-name: CI
-
-# Controls when the workflow will run
 on:
-  # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "main" ]
-  pull_request:
-    branches: [ "main" ]
+    branches: [ main ]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
-
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
-  build:
-    # The type of runner that the job will run on
+  build-and-release:
     runs-on: ubuntu-latest
 
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
-      - uses: actions/checkout@v4
+    - name: Checkout code
+      uses: actions/checkout@v3
 
-      # Runs a single command using the runners shell
-      - name: Run a one-line script
-        run: echo Hello, world!
+    - name: Zip and rename resource pack
+      run: |
+        cd resource_pack
+        zip -r ../resource_pack.zip .
+        cd ..
+        mv resource_pack.zip resource_pack.mcpack
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+    - name: Zip and rename behavior pack
+      run: |
+        cd behavior_pack
+        zip -r ../behavior_pack.zip .
+        cd ..
+        mv behavior_pack.zip behavior_pack.mcpack
+
+    - name: Create or update GitHub release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: auto-release
+        release_name: Automatic MCPack Build
+        body: |
+          This release is auto-generated from the latest commit to `main`.
+
+          Commit: ${{ github.sha }}
+        files: |
+          resource_pack.mcpack
+          behavior_pack.mcpack
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
