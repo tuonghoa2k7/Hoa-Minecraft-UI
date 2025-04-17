@@ -1,28 +1,5 @@
 {
   "namespace": "hoamcui:hud",
-  
-  // "player_nametag@elm.panel": {
-  //   "size": ["100%cm", "100%cm"],
-  //   "anchor_from": "center",
-  //   "anchor_to": "center",
-  //   "controls": [
-  //     {
-  //       "nametag": {
-  //         "type": "custom",
-  //         "renderer": "name_tag_renderer",
-  //         "layer": 2,
-  //         "anchor_from": "top_middle",
-  //         "anchor_to": "bottom_middle",
-  //         "size": [ 8, 8 ],
-  //         "bindings": [
-  //           {
-  //             "binding_name": "#playername"
-  //           }
-  //         ]
-  //       }
-  //     }
-  //   ]
-  // },
 
   "hotbar_left_content@elm.empty_panel": {
     "controls": [
