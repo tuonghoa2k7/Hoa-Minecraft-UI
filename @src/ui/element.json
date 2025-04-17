@@ -17,7 +17,7 @@
     "type": "collection_panel"
   },
 
-  "ip:pnl": {
+  "input_panel": {
     "type": "input_panel"
   },
 
