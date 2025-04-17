@@ -12,10 +12,10 @@ jobs:
     - name: Checkout code
       uses: actions/checkout@v3
 
-    - name: Show directory and files
-      run: |
-        pwd
-        ls -R
+    #- name: Show directory and files
+      #run: |
+        #pwd
+        #ls -R
         
     - name: Zip and change to .mcpack
       run: |
