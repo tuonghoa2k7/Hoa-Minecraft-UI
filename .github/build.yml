@@ -2,7 +2,7 @@ name: Build mcpack and release
 
 on:
   push:
-    branches: [ main ]
+    branches: [ mcpack ]
 
 jobs:
   build-and-release:
