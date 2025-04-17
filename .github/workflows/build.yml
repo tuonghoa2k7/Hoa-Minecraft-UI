@@ -1,0 +1,36 @@
+name: Build mcpack and release
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build-and-release:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+        
+    - name: Zip and change to .mcpack
+      run: |
+        cd /home/runner/work/Hoa-Minecraft-UI/Hoa-Minecraft-UI
+        zip -r ../Hoa-Minecraft-UI.zip .
+        cd ..
+        mv Hoa-Minecraft-UI.zip Hoa-Minecraft-UI.mcpack
+
+    
+    - name: Create or Update release
+      uses: softprops/action-gh-release@v2
+      with:
+        tag_name: Package
+        target_commitish: ${{ github.sha }}
+        release_name: Latest Build
+        body: |
+          This release is auto-build from the latest commit to `main`.
+
+          Latest commit from: ${{ github.sha }}
+        files: |
+          /home/runner/work/Hoa-Minecraft-UI/Hoa-Minecraft-UI.mcpack
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
