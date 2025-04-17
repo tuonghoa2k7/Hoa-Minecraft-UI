@@ -25,7 +25,7 @@
               }
             },
             {
-              "player_paperdoll_padding@elm.padding": {}
+              "padding@elm.padding": {}
             },
             {
               "utility_tools@hoamcui:utility_tools.utility_tools": {
