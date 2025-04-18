@@ -2,10 +2,11 @@
   "namespace": "hoamcui:player_paperdoll",
 
   "player_paperdoll@elm.image": {
-    "texture": "@src/textures/ui/hud_element_background",
-    "$hud_element_background_alpha|default": 0.4,
-    "alpha": "$hud_element_background_alpha",
-    "size": ["100%c + 48px", "100%c + 6px"],
+    "$hoamcui:element_texture|default": "@src/textures/ui/black_element",
+    "texture": "$hoamcui:element_texture",
+    "$hoamcui:element_background_alpha|default": 0.4,
+    "alpha": "$hoamcui:element_background_alpha",
+    "size": ["100%c + 46px", "100%c + 6px"],
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
     "layer": 0,
@@ -18,14 +19,14 @@
             {
               "paperdoll_renderer@elm.custom": {
                 "renderer": "live_player_renderer",
-                "layer": 1,
-                "animation_reset_name": "screen_animation_reset",
-                "anims": [
-                  "@common.screen_exit_size_animation_push",
-                  "@common.screen_exit_size_animation_pop",
-                  "@common.screen_entrance_size_animation_push",
-                  "@common.screen_entrance_size_animation_pop"
-                ]
+                "layer": 1// ,
+                // "animation_reset_name": "screen_animation_reset",
+                // "anims": [
+                //   "@common.screen_exit_size_animation_push",
+                //   "@common.screen_exit_size_animation_pop",
+                //   "@common.screen_entrance_size_animation_push",
+                //   "@common.screen_entrance_size_animation_pop"
+                // ]
               }
             }
           ]

@@ -1,4 +1,9 @@
 {
+
+  "selector_stack_panel/how_to_play_button": {
+    "ignored": "(not $help_button_visible)"
+  },
+
   "selector_stack_panel/controls_and_settings_selector_pane/language_button": {
     "ignored": false
   },

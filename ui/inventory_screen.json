@@ -1,0 +1,222 @@
+{
+  // "left_tab@common_tabs.tab_left": {},
+
+  // "top_tab@crafting.left_tab": {
+  //   "size": [ "100%", 25 ],
+  //   "alpha": 0.2,
+  //   "$anims|default": [],
+  //   "anims": "$anims",
+  //   "$offset_override|default": [ 0, 0 ],
+  //   "offset": "$offset_override",
+  //   "$toggle_focus_enabled": false,
+  //   "$toggle_name": "navigation_tab",
+  //   "$toggle_group_default_selected": "$construction_index",
+  //   "$tab_content": "crafting.empty_tab_panel",
+  //   "$allow_controller_back_button_mapping": "$is_ps4"
+  // },
+
+  // "search_tab": {
+  //   "$is_bottom_most_tab": true,
+  //   "$focus_override_up": "nature_tab",
+  //   "$focus_override_down": "FOCUS_OVERRIDE_STOP",
+  //   "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+  //   "$focus_override_right": ""
+  // },
+
+  // "construction_tab": {
+  //   "$is_top_most_tab": false,
+  //   "$focus_override_up": "",
+  //   "$focus_override_down": "equipment_tab",
+  //   "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+  //   "$focus_override_right": "",
+  //   "$unchecked_default_image": "textures/ui/TabLeftBack",
+  //   "$unchecked_hover_image": "textures/ui/TabLeftBackHover",
+  //   "$unchecked_locked_image": "textures/ui/TabLeftBack",
+  //   "$unchecked_locked_hover_image": "textures/ui/TabLeftBack",
+
+  //   "$checked_default_image": "textures/ui/TabLeftFront",
+  //   "$checked_hover_image": "textures/ui/TabLeftFrontHover",
+  //   "$checked_locked_image": "textures/ui/TabLeftFront",
+  //   "$checked_locked_hover_image": "textures/ui/TabLeftFront",
+  //   "variables": [
+  //     {
+  //       "requires": "$animate",
+  //       "$anims": [ "@crafting.tab_wait_anim" ],
+  //       "$offset_override": [ 30, 0 ]
+  //     }
+  //   ]
+  // },
+
+  // "equipment_tab": {
+  //   "$focus_override_up": "construction_tab",
+  //   "$focus_change_down": "items_tab",
+  //   "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+  //   "$focus_override_right": "",
+  //   "variables": [
+  //     {
+  //       "requires": "$animate",
+  //       "$anims": [ "@crafting.tab_wait_anim" ],
+  //       "$offset_override": [ 30, 0 ]
+  //     }
+  //   ]
+  // },
+
+  // "items_tab": {
+  //   "$focus_override_up": "equipment_tab",
+  //   "$focus_change_down": "nature_tab",
+  //   "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+  //   "$focus_override_right": "",
+  //   "variables": [
+  //     {
+  //       "requires": "$animate",
+  //       "$anims": [ "@crafting.tab_wait_anim" ],
+  //       "$offset_override": [ 30, 0 ]
+  //     }
+  //   ]
+  // },
+
+  // "nature_tab": {
+  //   "$focus_override_up": "items_tab",
+  //   "$focus_change_down": "search_tab",
+  //   "$focus_override_left": "FOCUS_OVERRIDE_STOP",
+  //   "$focus_override_right": "",
+  //   "variables": [
+  //     {
+  //       "requires": "$animate",
+  //       "$anims": [ "@crafting.tab_wait_anim" ],
+  //       "$offset_override": [ 30, 0 ]
+  //     }
+  //   ]
+  // },
+
+  // "tab_navigation_panel_layout": {
+  //   "size": [ 30, "100%" ]
+  // },
+
+  // "tab_navigation_panel_layout/navigation_tabs": {
+  //   "size": [ "100%", "fill" ],
+  //   "modifications": [
+  //     {
+  //       "array_name": "controls",
+  //       "operation": "insert_back",
+  //       "value": [
+  //         {
+  //           "bottom_tabs": {
+  //             "type": "stack_panel",
+  //             "orientation": "vertical",
+  //             "size": [ "100% + 8px", "100%" ],
+  //             "anchor_from": "top_left",
+  //             "anchor_to": "top_left",
+  //             "offset": [ -4, 0 ],
+  //             "controls": [
+  //               {
+  //                 "fill_padding": {
+  //                   "type": "panel",
+  //                   "size": [ "100%", 141 ]
+  //                 }
+  //               },
+  //               {
+  //                 "search_tab_holder": {
+  //                   "type": "panel",
+  //                   "size": [ "100%", 25 ],
+  //                   "controls": [
+  //                     {
+  //                       "search_tab@crafting.search_tab": {
+  //                         "size": [ "100%", 25 ]
+  //                       }
+  //                     }
+  //                   ]
+  //                 }
+  //               }
+  //             ]
+  //           }
+  //         }
+  //       ]
+  //     }
+  //   ]
+  // },
+
+  // "tab_navigation_panel_layout/navigation_tabs/content": {
+  //   "orientation": "vertical",
+  //   "size": [ "100% + 8px", "100%" ],
+  //   "offset": [ -4, 0 ],
+  //   "controls": [
+  //     {
+  //       "construction_tab_panel": {
+  //         "type": "panel",
+  //         "size": [ "100%", "100%c" ],
+  //         "max_size": [ "100%", 25 ],
+  //         "controls": [
+  //           {
+  //             "construction_tab_factory": {
+  //               "type": "factory",
+  //               "size": [ "100%", "100%c" ],
+  //               "control_ids": {
+  //                 "construction_tab": "@crafting.construction_tab"
+  //               }
+  //             }
+  //           }
+  //         ]
+  //       }
+  //     },
+  //     {
+  //       "equipment_tab_panel": {
+  //         "type": "panel",
+  //         "size": [ "100%", "100%c" ],
+  //         "max_size": [ "100%", 25 ],
+  //         "controls": [
+  //           {
+  //             "equipment_tab_factory": {
+  //               "type": "factory",
+  //               "size": [ "100%", "100%c" ],
+  //               "control_ids": {
+  //                 "equipment_tab": "@crafting.equipment_tab"
+  //               }
+  //             }
+  //           }
+  //         ]
+  //       }
+  //     },
+  //     {
+  //       "items_tab_panel": {
+  //         "type": "panel",
+  //         "size": [ "100%", "100%c" ],
+  //         "max_size": [ "100%", 25 ],
+  //         "controls": [
+  //           {
+  //             "items_tab_factory": {
+  //               "type": "factory",
+  //               "size": [ "100%", "100%c" ],
+  //               "control_ids": {
+  //                 "items_tab": "@crafting.items_tab"
+  //               }
+  //             }
+  //           }
+  //         ]
+  //       }
+  //     },
+  //     {
+  //       "nature_tab_panel": {
+  //         "type": "panel",
+  //         "size": [ "100%", "100%c" ],
+  //         "max_size": [ "100%", 25 ],
+  //         "controls": [
+  //           {
+  //             "nature_tab_factory": {
+  //               "type": "factory",
+  //               "size": [ "100%", "100%c" ],
+  //               "control_ids": {
+  //                 "nature_tab": "@crafting.nature_tab"
+  //               }
+  //             }
+  //           }
+  //         ]
+  //       }
+  //     }
+  //   ]
+  // },
+
+  "toolbar_panel/toolbar_background/toolbar_stack_panel/help_button_panel": {
+    "ignored": "(not $help_button_visible)"
+  }
+}

@@ -168,16 +168,92 @@
     ]
   },
 
-  "menu@elm.panel": {
-    "size": ["100%", "100%"],
+  "open_toggle@elm.empty_panel": {
+    "anchor_from": "center",
+    "anchor_to": "center",
     "layer": 100,
     "controls": [
       {
-        "menu_background@elm.image": {
+        "open_background@elm.image": {
           "texture": "@src/textures/ui/hud_element_background",
-          "size": ["64%", "88%"],
+          "size": [32, 32],
           "$hud_element_background_alpha|default": 0.4,
           "alpha": "$hud_element_background_alpha",
+          "layer": 2,
+          "controls": [
+            {
+              "open@elm.image": {
+                "texture": "textures/ui/close_X_button",
+                "size": ["100% + 8px", "100% + 8px"],
+                "layer": 4
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+  "close_toggle@elm.empty_panel": {
+    "anchor_from": "center",
+    "anchor_to": "center",
+    "layer": 100,
+    "controls": [
+      {
+        "close_background@elm.image": {
+          "texture": "@src/textures/ui/hud_element_background",
+          "size": [32, 32],
+          "$hud_element_background_alpha|default": 0.4,
+          "alpha": "$hud_element_background_alpha",
+          "layer": 2,
+          "controls": [
+            {
+              "close@elm.image": {
+                "texture": "textures/ui/close_X_button",
+                "size": ["100% + 8px", "100% + 8px"],
+                "layer": 4
+              }
+            }
+          ]
+        }
+      }
+    ]
+  },
+
+
+  "12menu@elm.panel": {
+    "anchor_from": "top_right",
+    "anchor_to": "top_right",
+    "size": ["100%", "100%"],
+    "controls": [
+      {
+        "close_toggle@elm.toggle": {
+          "layer": 1,
+          "sound_name": "random.click",
+          "sound_volume": 1.0,
+          "sound_pitch": 1.0,
+          "size": [32, 32]
+        }
+      }
+    ]
+  },
+
+
+  "menu_texture@elm.image": {
+    "$hoamcui:element_texture|default": "@src/textures/ui/black_element",
+    "texture": "$hoamcui:element_texture",
+    "$hoamcui:element_background_alpha|default": 0.4,
+    "alpha": "$hoamcui:element_background_alpha"
+  },
+
+  "menu@elm.panel": {
+    "size": ["100%", "100%"],
+    "layer": 100,
+    "$menu_texture": "hoamcui:menu.menu_texture",
+    "controls": [
+      {
+        "menu_background@$menu_texture": {
+          "size": ["64%", "88%"],
           "controls": [
             {
               "menu_stack@elm.stack": {
@@ -185,21 +261,18 @@
                 "size": ["100% - 16px", "100% - 16px"],
                 "anchor_from": "center",
                 "anchor_to": "center",
-                "layer": 101,
+                "layer": 102,
                 "controls": [
                   {
-                    "menu_head@elm.panel": {
+                    "menu_title@elm.panel": {
                       "size": ["100%", "10%"],
-                      "layer": 102,
+                      "layer": 104,
                       "controls": [
                         {
-                          "menu_title_background@elm.image": {
-                            "texture": "@src/textures/ui/hud_element_background",
+                          "menu_title_background@$menu_texture": {
                             "size": ["100%", "100%"],
                             "anchor_from": "center",
                             "anchor_to": "center",
-                            "$hud_element_background_alpha|default": 0.4,
-                            "alpha": "$hud_element_background_alpha",
                             "controls": [
                               {
                                 "menu_title_text@elm.label": {
@@ -211,17 +284,15 @@
                           }
                         },
                         {
-                          "menu_close_button_background@elm.image": {
-                            "texture": "@src/textures/ui/hud_element_background",
+                          "menu_close_button_background@$menu_texture": {
                             "size": ["8% - 8px", "100% - 8px"],
                             "anchor_from": "right_middle",
                             "anchor_to": "right_middle",
                             "offset": [-4, 0],
-                            "$hud_element_background_alpha|default": 0.4,
-                            "alpha": "$hud_element_background_alpha",
+                            "layer": 106,
                             "controls": [
                               {
-                                "menu_close_button@elm.image": {
+                                "menu_close_button@$menu_texture": {
                                   "texture": "textures/ui/close_X_button",
                                   "size": ["100% + 16px", "100% + 16px"]
                                 }
@@ -240,13 +311,11 @@
                   {
                     "menu_content@elm.panel": {
                       "size": ["100%", "74%"],
+                      "layer": 104,
                       "controls": [
                         {
-                          "menu_content_background@elm.image": {
-                            "texture": "@src/textures/ui/hud_element_background",
+                          "menu_content_background@$menu_texture": {
                             "size": ["100%", "100%"],
-                            "$hud_element_background_alpha|default": 0.4,
-                            "alpha": "$hud_element_background_alpha",
                             "controls": [
                               {
                                 "menu_content_scroll@elm.panel": {
@@ -280,18 +349,21 @@
                     }
                   },
                   {
-                    "menu_title_background@elm.image": {
-                      "texture": "@src/textures/ui/hud_element_background",
+                    "menu_button@elm.panel": {
                       "size": ["100%", "14%"],
-                      "anchor_from": "top_middle",
-                      "anchor_to": "top_middle",
-                      "$hud_element_background_alpha|default": 0.4,
-                      "alpha": "$hud_element_background_alpha",
+                      "layer": 104,
                       "controls": [
                         {
-                          "menu_title_text@elm.label": {
-                            "text": "menu_button*3",
-                            "font_size": "extra_large"
+                          "menu_button_background@$menu_texture": {
+                            "size": ["100%", "100%"],
+                            "controls": [
+                              {
+                                "menu_button_text@elm.label": {
+                                  "text": "menu_button*3",
+                                  "font_size": "extra_large"
+                                }
+                              }
+                            ]
                           }
                         }
                       ]

@@ -2,9 +2,10 @@
   "namespace": "hoamcui:utility_tools",
 
   "utility_tools@elm.image": {
-    "texture": "@src/textures/ui/hud_element_background",
-    "$hud_element_background_alpha|default": 0.4,
-    "alpha": "$hud_element_background_alpha",
+    "$hoamcui:element_texture|default": "@src/textures/ui/black_element",
+    "texture": "$hoamcui:element_texture",
+    "$hoamcui:element_background_alpha|default": 0.4,
+    "alpha": "$hoamcui:element_background_alpha",
     "size": ["100%c + 6px", "100%c + 6px"],
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
@@ -22,23 +23,23 @@
           "controls": [
             {
               "clock@$tool_item": {
-                "$id:clock_item|default": 419,
-                "$item_id": "$id:clock_item",
+                "$minecraft:clock|default": 419,
+                "$item_id": "$minecraft:clock",
                 "$item_size": "$tool_size"
               }
             },
             {
               "compass@$tool_item": {
-                "$id:compass_item|default": 417,
-                "$item_id": "$id:compass_item",
+                "$minecraft:compass|default": 417,
+                "$item_id": "$minecraft:compass",
                 "$item_size": "$tool_size"
               }
             },
             {
               "recovery_compass@$tool_item": {
                 "ignored": "($is_on_3p_server)",
-                "$id:recovery_compass_item|default": 683,
-                "$item_id": "$id:recovery_compass_item",
+                "$minecraft:recovery_compass|default": 683,
+                "$item_id": "$minecraft:recovery_compass",
                 "$item_size": "$tool_size"
               }
             }
