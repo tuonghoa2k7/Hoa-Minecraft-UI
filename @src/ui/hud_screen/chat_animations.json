@@ -1,0 +1,73 @@
+{
+  "namespace": "hoamcui:chat_anims",
+
+  "anim_chat_text_in_alpha": {
+    "anim_type": "alpha",
+    "easing": "in_cubic",
+    "duration": 0.4,
+    "from": 0,
+    "to": 1,
+    "next": "@hoamcui:chat_anims.anim_chat_text_wait_alpha"
+  },
+
+  "anim_chat_text_wait_alpha": {
+    "anim_type": "wait",
+    "duration": "$chat_item_lifetime",
+    "next": "@hoamcui:chat_anims.anim_chat_text_out_alpha"
+  },
+
+  "anim_chat_text_out_alpha": {
+    "anim_type": "alpha",
+    "easing": "in_cubic",
+    "duration": 0.6,
+    "from": 1,
+    "to": 0
+  },
+  
+  "anim_chat_background_in_alpha": {
+    "anim_type": "alpha",
+    "easing": "in_cubic",
+    "duration": 0.4,
+    "from": 0,
+    "to": "$chat_background_alpha",
+    "next": "@hoamcui:chat_anims.anim_chat_background_wait_alpha"
+  },
+
+  "anim_chat_background_wait_alpha": {
+    "anim_type": "wait",
+    "duration": "$chat_item_lifetime",
+    "next": "@hoamcui:chat_anims.anim_chat_background_out_alpha"
+  },
+
+  "anim_chat_background_out_alpha": {
+    "anim_type": "alpha",
+    "destroy_at_end": "chat_grid_item",
+    "easing": "in_cubic",
+    "duration": 0.6,
+    "from": "$chat_background_alpha",
+    "to": 0
+  },
+
+  "anim_chat_background_in": {
+    "anim_type": "offset",
+    "easing": "out_expo",
+    "duration": 0.4,
+    "from": ["-100%", 0],
+    "to": [0, 0],
+    "next": "@hoamcui:chat_anims.anim_chat_background_wait"
+  },
+
+  "anim_chat_background_wait": {
+    "anim_type": "wait",
+    "duration": "$chat_item_lifetime",
+    "next": "@hoamcui:chat_anims.anim_chat_background_out"
+  },
+
+  "anim_chat_background_out": {
+    "anim_type": "offset",
+    "easing": "in_expo",
+    "duration": 0.6,
+    "from": [0, 0],
+    "to": ["-100%", 0]
+    }
+}

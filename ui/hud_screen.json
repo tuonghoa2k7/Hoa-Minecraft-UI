@@ -22,19 +22,22 @@
     "alpha": "$position_content_background_alpha"
   },
 
-  "anim_chat_bg_alpha": {
-    "anim_type": "alpha",
-    "easing": "in_quart",
-    "destroy_at_end": "chat_grid_item",
-    "duration": 1,
-    "$chat_background_alpha|default": 0.6,
-    "from": "$chat_background_alpha",
-    "to": 0
+  "anim_chat_bg_wait@hoamcui:chat_anims.anim_chat_background_in_alpha": {},
+
+  "chat_label": {
+    "size": ["100% - 2px", "default"],
+    "anims": [
+      "@hoamcui:chat_anims.anim_chat_text_in_alpha"
+    ]
   },
 
   "chat_grid_item/chat_background": {
+    "offset": "@hoamcui:chat_anims.anim_chat_background_in",
     "$chat_background_alpha|default": 0.6,
-    "alpha": "$chat_background_alpha"
+    "alpha": "$chat_background_alpha",
+    "anims": [
+      "@hoamcui:chat_anims.anim_chat_background_in_alpha"
+    ]
   },
 
   "centered_gui_elements": {
@@ -61,8 +64,36 @@
     "offset": [ 0, -1 ]
   },
 
+  // "hotbar_slot_selected_image": {
+  //   "texture": "textures/ui/selected_hotbar_slot"
+  // },
+
+  // "start_cap_image": {
+  //   "type": "image",
+  //   "$cap_image_size|default": [ 1, 22 ],
+  //   "texture": "textures/ui/hotbar_start_cap",
+  //   "anchor_from": "top_left",
+  //   "anchor_to": "top_left",
+  //   "size": "$cap_image_size",
+  //   "layer": 4,
+  //   "alpha": 0.65,
+  //   "visible": true
+  // },
+
+  // "end_cap_image@start_cap_image": {
+  //   "texture": "textures/ui/hotbar_end_cap"
+  // },
+
   "hotbar_panel": {
     "modifications": [
+      {
+        "control_name": "hotbar_start_cap",
+        "operation": "remove"
+      },
+      {
+        "control_name": "hotbar_end_cap",
+        "operation": "remove"
+      },
       {
         "array_name": "controls",
         "operation": "insert_front",
@@ -91,7 +122,7 @@
   "hud_screen": {
     "$use_loading_bars": false,
     "$screen_animations": [],
-    "always_accepts_input": true,
+    // "always_accepts_input": true,
     "render_only_when_topmost": false
   }
 }

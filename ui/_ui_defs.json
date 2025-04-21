@@ -5,6 +5,7 @@
 
     "@src/ui/menu/menu.json",
 
+    "@src/ui/hud_screen/chat_animations.json",
     "@src/ui/hud_screen/hud_screen.json",
     "@src/ui/hud_screen/player_paperdoll.json",
     "@src/ui/hud_screen/positions.json",
