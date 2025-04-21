@@ -6,15 +6,15 @@
     "texture": "$hoamcui:element_texture",
     "$hoamcui:element_background_alpha|default": 0.4,
     "alpha": "$hoamcui:element_background_alpha",
-    "size": ["100%c + 46px", "100%c + 6px"],
+    "size": ["100%cm + 34px", "100%cm + 6px"],
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
     "layer": 0,
     "controls": [
       {
         "paperdoll@elm.panel": {
-          "size": [48, 96],
-          "offset": [0, -22],
+          "size": [32, 64],
+          "offset": [0, -15],
           "controls": [
             {
               "paperdoll_renderer@elm.custom": {
