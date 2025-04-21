@@ -11,6 +11,7 @@
           "anchor_from": "bottom_right",
           "anchor_to": "bottom_right",
           "use_child_anchors": true,
+          "$padding_size": [4, 4],
           "controls": [
             {
               "player_paperdoll@hoamcui:player_paperdoll.player_paperdoll": {
