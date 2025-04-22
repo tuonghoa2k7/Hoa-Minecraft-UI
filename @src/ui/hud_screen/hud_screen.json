@@ -7,16 +7,16 @@
         "hotbar_left_stack@elm.stack": {
           "orientation": "horizontal",
           "size": [ "100%c", "100%cm" ],
-          "offset": [-3, 22],
+          "offset": [-2, 21],
           "anchor_from": "bottom_right",
           "anchor_to": "bottom_right",
           "use_child_anchors": true,
-          "$padding_size": [3, 3],
+          "$padding_size": [2, 0],
           "controls": [
             {
               "player_paperdoll@hoamcui:player_paperdoll.player_paperdoll": {
-                // "anchor_from": "bottom_middle",
-                // "anchor_to": "bottom_middle",
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle",
                 "bindings": [
                   {
                     "binding_name": "#paper_doll_visible",
@@ -30,8 +30,8 @@
             },
             {
               "utility_tools@hoamcui:utility_tools.utility_tools": {
-                // "anchor_from": "bottom_middle",
-                // "anchor_to": "bottom_middle"
+                "anchor_from": "bottom_middle",
+                "anchor_to": "bottom_middle"
               }
             }
           ]

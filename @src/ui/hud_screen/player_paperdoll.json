@@ -1,12 +1,8 @@
 {
   "namespace": "hoamcui:player_paperdoll",
 
-  "player_paperdoll@elm.image": {
-    "$hoamcui:element_texture|default": "@src/textures/ui/black_element",
-    "texture": "$hoamcui:element_texture",
-    "$hoamcui:element_background_alpha|default": 0.4,
-    "alpha": "$hoamcui:element_background_alpha",
-    "size": ["100%cm + 34px", "100%cm + 6px"],
+  "player_paperdoll@elm.element_background": {
+    "size": ["100%cm + 36px", "100%cm + 4px"],
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
     "layer": 0,

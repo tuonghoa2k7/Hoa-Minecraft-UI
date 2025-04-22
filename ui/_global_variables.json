@@ -3,7 +3,7 @@
   "$minecraft:clock": 419,
   "$minecraft:recovery_compass": 683,
 
-  "$hoamcui:element_texture": "@src/textures/ui/black_element",
+  "$hoamcui:element_texture": "@src/textures/ui/element/black_element",
   "$hoamcui:element_background_alpha": 0.4,
 
   "$position_content_background_alpha": 0.4,

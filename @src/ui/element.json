@@ -70,6 +70,12 @@
     "size": "$padding_size"
   },
 
+  "element_background@elm.image": {
+    "$hoamcui:element_texture|default": "@src/textures/ui/element/black_element",
+    "texture": "$hoamcui:element_texture",
+    "$hoamcui:element_background_alpha|default": 0.4,
+    "alpha": "$hoamcui:element_background_alpha"
+  },
 
   "cl:bnt@elm.btn": {
     "$click|default": "button.menu_select",

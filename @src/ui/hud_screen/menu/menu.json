@@ -1,171 +1,7 @@
 {
   "namespace": "hoamcui:menu",
 
-  "scroll_content_example@elm.stack": {
-    "orientation": "vertical",
-    "size": ["100%", "100%c"],
-    "$content_size": ["100%", 64],
-    "$scrolling_content_anchor_from": "top_middle",
-    "$scrolling_content_anchor_to": "top_middle",
-    "use_child_anchors": true,
-    "controls": [
-      {
-        "scroll_content_example_element@elm.image": {
-          "texture": "@src/textures/ui/hud_element_background",
-          "size": "$content_size",
-          "$hud_element_background_alpha|default": 0.4,
-          "alpha": "$hud_element_background_alpha",
-          "controls": [
-            {
-              "text@elm.label": {
-                "text": "text",
-                "font_size": "large"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "element_padding@elm.padding": {
-        }
-      },
-      {
-        "scroll_content_example_element1@elm.image": {
-          "texture": "@src/textures/ui/hud_element_background",
-          "size": "$content_size",
-          "$hud_element_background_alpha|default": 0.4,
-          "alpha": "$hud_element_background_alpha",
-          "controls": [
-            {
-              "text1@elm.label": {
-                "text": "text1",
-                "font_size": "large"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "element_padding1@elm.padding": {
-        }
-      },
-      {
-        "scroll_content_example_element2@elm.image": {
-          "texture": "@src/textures/ui/hud_element_background",
-          "size": "$content_size",
-          "$hud_element_background_alpha|default": 0.4,
-          "alpha": "$hud_element_background_alpha",
-          "controls": [
-            {
-              "text2@elm.label": {
-                "text": "text2",
-                "font_size": "large"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "element_padding2@elm.padding": {
-        }
-      },
-      {
-        "scroll_content_example_element3@elm.image": {
-          "texture": "@src/textures/ui/hud_element_background",
-          "size": "$content_size",
-          "$hud_element_background_alpha|default": 0.4,
-          "alpha": "$hud_element_background_alpha",
-          "controls": [
-            {
-              "text3@elm.label": {
-                "text": "text3",
-                "font_size": "large"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "element_padding3@elm.padding": {
-        }
-      },
-      {
-        "scroll_content_example_element4@elm.image": {
-          "texture": "@src/textures/ui/hud_element_background",
-          "size": "$content_size",
-          "$hud_element_background_alpha|default": 0.4,
-          "alpha": "$hud_element_background_alpha",
-          "controls": [
-            {
-              "text4@elm.label": {
-                "text": "text4",
-                "font_size": "large"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "element_padding4@elm.padding": {
-        }
-      },
-      {
-        "scroll_content_example_element5@elm.image": {
-          "texture": "@src/textures/ui/hud_element_background",
-          "size": "$content_size",
-          "$hud_element_background_alpha|default": 0.4,
-          "alpha": "$hud_element_background_alpha",
-          "controls": [
-            {
-              "text5@elm.label": {
-                "text": "text5",
-                "font_size": "large"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "element_padding5@elm.padding": {
-        }
-      },
-      {
-        "scroll_content_example_element6@elm.image": {
-          "texture": "@src/textures/ui/hud_element_background",
-          "size": "$content_size",
-          "$hud_element_background_alpha|default": 0.4,
-          "alpha": "$hud_element_background_alpha",
-          "controls": [
-            {
-              "text6@elm.label": {
-                "text": "text6",
-                "font_size": "large"
-              }
-            }
-          ]
-        }
-      },
-      {
-        "element_padding6@elm.padding": {
-        }
-      },
-      {
-        "scroll_content_example_element7@elm.image": {
-          "texture": "@src/textures/ui/hud_element_background",
-          "size": "$content_size",
-          "$hud_element_background_alpha|default": 0.4,
-          "alpha": "$hud_element_background_alpha",
-          "controls": [
-            {
-              "text7@elm.label": {
-                "text": "text7",
-                "font_size": "large"
-              }
-            }
-          ]
-        }
-      }
-    ]
+  "menu_texture@elm.element_background": {
   },
 
   "open_toggle@elm.empty_panel": {
@@ -220,39 +56,157 @@
     ]
   },
 
-
-  "12menu@elm.panel": {
-    "anchor_from": "top_right",
-    "anchor_to": "top_right",
-    "size": ["100%", "100%"],
+  "scroll_content_example@elm.stack": {
+    "orientation": "vertical",
+    "size": ["100%", "100%c"],
+    "$scrolling_content_anchor_from": "top_middle",
+    "$scrolling_content_anchor_to": "top_middle",
+    "use_child_anchors": true,
+    "$content_image": "hoamcui:menu.menu_texture",
+    "$content_size": ["100%", 64],
     "controls": [
       {
-        "close_toggle@elm.toggle": {
-          "layer": 1,
-          "sound_name": "random.click",
-          "sound_volume": 1.0,
-          "sound_pitch": 1.0,
-          "size": [32, 32]
+        "scroll_content_example_element@$content_image": {
+          "size": "$content_size",
+          "controls": [
+            {
+              "text@elm.label": {
+                "text": "text",
+                "font_size": "large"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "element_padding@elm.padding": {
+        }
+      },
+      {
+        "scroll_content_example_element1@$content_image": {
+          "size": "$content_size",
+          "controls": [
+            {
+              "text1@elm.label": {
+                "text": "text1",
+                "font_size": "large"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "element_padding1@elm.padding": {
+        }
+      },
+      {
+        "scroll_content_example_element2@$content_image": {
+          "size": "$content_size",
+          "controls": [
+            {
+              "text2@elm.label": {
+                "text": "text2",
+                "font_size": "large"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "element_padding2@elm.padding": {
+        }
+      },
+      {
+        "scroll_content_example_element3@$content_image": {
+          "size": "$content_size",
+          "controls": [
+            {
+              "text3@elm.label": {
+                "text": "text3",
+                "font_size": "large"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "element_padding3@elm.padding": {
+        }
+      },
+      {
+        "scroll_content_example_element4@$content_image": {
+          "size": "$content_size",
+          "controls": [
+            {
+              "text4@elm.label": {
+                "text": "text4",
+                "font_size": "large"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "element_padding4@elm.padding": {
+        }
+      },
+      {
+        "scroll_content_example_element5@$content_image": {
+          "size": "$content_size",
+          "controls": [
+            {
+              "text5@elm.label": {
+                "text": "text5",
+                "font_size": "large"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "element_padding5@elm.padding": {
+        }
+      },
+      {
+        "scroll_content_example_element6@$content_image": {
+          "size": "$content_size",
+          "controls": [
+            {
+              "text6@elm.label": {
+                "text": "text6",
+                "font_size": "large"
+              }
+            }
+          ]
+        }
+      },
+      {
+        "element_padding6@elm.padding": {
+        }
+      },
+      {
+        "scroll_content_example_element7@$content_image": {
+          "size": "$content_size",
+          "controls": [
+            {
+              "text7@elm.label": {
+                "text": "text7",
+                "font_size": "large"
+              }
+            }
+          ]
         }
       }
     ]
   },
 
-
-  "menu_texture@elm.image": {
-    "$hoamcui:element_texture|default": "@src/textures/ui/black_element",
-    "texture": "$hoamcui:element_texture",
-    "$hoamcui:element_background_alpha|default": 0.4,
-    "alpha": "$hoamcui:element_background_alpha"
-  },
-
   "menu@elm.panel": {
     "size": ["100%", "100%"],
     "layer": 100,
-    "$menu_texture": "hoamcui:menu.menu_texture",
+    "$image": "hoamcui:menu.menu_texture",
     "controls": [
       {
-        "menu_background@$menu_texture": {
+        "menu_background@$image": {
           "size": ["64%", "88%"],
           "controls": [
             {
@@ -269,7 +223,7 @@
                       "layer": 104,
                       "controls": [
                         {
-                          "menu_title_background@$menu_texture": {
+                          "menu_title_background@$image": {
                             "size": ["100%", "100%"],
                             "anchor_from": "center",
                             "anchor_to": "center",
@@ -284,7 +238,7 @@
                           }
                         },
                         {
-                          "menu_close_button_background@$menu_texture": {
+                          "menu_close_button_background@$image": {
                             "size": ["8% - 8px", "100% - 8px"],
                             "anchor_from": "right_middle",
                             "anchor_to": "right_middle",
@@ -292,7 +246,7 @@
                             "layer": 106,
                             "controls": [
                               {
-                                "menu_close_button@$menu_texture": {
+                                "menu_close_button@$image": {
                                   "texture": "textures/ui/close_X_button",
                                   "size": ["100% + 16px", "100% + 16px"]
                                 }
@@ -314,7 +268,7 @@
                       "layer": 104,
                       "controls": [
                         {
-                          "menu_content_background@$menu_texture": {
+                          "menu_content_background@$image": {
                             "size": ["100%", "100%"],
                             "controls": [
                               {
@@ -329,7 +283,7 @@
                                         "$show_background": false,
                                         "$scroll_bar_left_padding_size": [4, 0],
                                         "$scroll_bar_right_padding_size": [0, 0],
-                                        "$scroll_size": [8, "100% - 4px"],
+                                        "$scroll_size": [4, "100% - 4px"],
                                         "$scrolling_content": "hoamcui:menu.scroll_content_example",
                                         "$always_handle_scrolling": true
                                       }
@@ -354,7 +308,7 @@
                       "layer": 104,
                       "controls": [
                         {
-                          "menu_button_background@$menu_texture": {
+                          "menu_button_background@$image": {
                             "size": ["100%", "100%"],
                             "controls": [
                               {

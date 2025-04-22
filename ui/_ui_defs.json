@@ -3,8 +3,7 @@
     "@src/ui/element.json",
     "@src/ui/item_renderer.json",
 
-    "@src/ui/menu/menu.json",
-
+    "@src/ui/hud_screen/menu/menu.json",
     "@src/ui/hud_screen/chat_animations.json",
     "@src/ui/hud_screen/hud_screen.json",
     "@src/ui/hud_screen/player_paperdoll.json",
