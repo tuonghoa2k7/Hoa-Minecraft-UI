@@ -63,18 +63,6 @@
     "size": [ 20, 20 ]
   },
 
-  "start_cap_image": {
-    "$cap_image_size|default": [ 2, 22 ]
-  },
-
-  "hotbar_start_cap": {
-    "$cap_size": [ 2, 22 ]
-  },
-
-  "hotbar_end_cap": {
-    "$cap_size": [ 2, 22 ]
-  },
-
   "hotbar_elipses_button": {
     "offset": [-0.5, 0]
   },
