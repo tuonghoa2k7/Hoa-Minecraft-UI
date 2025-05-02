@@ -7,7 +7,7 @@
         "hotbar_left_stack@elm.stack": {
           "orientation": "horizontal",
           "size": [ "100%c", "100%cm" ],
-          "offset": [-2, 21],
+          "offset": [-2, 22],
           "anchor_from": "bottom_right",
           "anchor_to": "bottom_right",
           "use_child_anchors": true,

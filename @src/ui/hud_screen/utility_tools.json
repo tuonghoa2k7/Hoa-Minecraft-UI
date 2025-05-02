@@ -2,7 +2,7 @@
   "namespace": "hoamcui:utility_tools",
 
   "utility_tools@elm.element_background": {
-    "size": ["100%cm + 4px", "100%cm + 4px"],
+    "size": ["100%cm + 6px", "100%cm + 6px"],
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
     "layer": 0,
@@ -16,6 +16,7 @@
           "layer": 1,
           "$tool_item": "item_renderer.item_id",
           "$tool_size": [16, 16],
+          "$padding_size": [3, 3],
           "controls": [
             {
               "clock@$tool_item": {
@@ -25,10 +26,18 @@
               }
             },
             {
+              "clock_padding@elm.padding": {}
+            },
+            {
               "compass@$tool_item": {
                 "$minecraft:compass|default": 417,
                 "$item_id": "$minecraft:compass",
                 "$item_size": "$tool_size"
+              }
+            },
+            {
+              "compass_padding@elm.padding": {
+                "ignored": "($is_on_3p_server)"
               }
             },
             {

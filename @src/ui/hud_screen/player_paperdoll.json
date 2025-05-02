@@ -2,7 +2,7 @@
   "namespace": "hoamcui:player_paperdoll",
 
   "player_paperdoll@elm.element_background": {
-    "size": ["100%cm + 36px", "100%cm + 4px"],
+    "size": ["100%cm + 38px", "100%cm + 6px"],
     "anchor_from": "bottom_middle",
     "anchor_to": "bottom_middle",
     "layer": 0,
