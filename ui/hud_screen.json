@@ -63,14 +63,32 @@
     "size": [ 20, 20 ]
   },
 
-  "hotbar_elipses_button": {
-    "offset": [-0.5, 0]
-  },
-
   "elipses_image": {
     "texture": "textures/ui/inventory_icon",
     "$elipses_image_size|default": [ 19, 13 ],
     "offset": [ 0, -1 ]
+  },
+
+  "hotbar_elipses_button": {
+    "offset": [-0.5, 0]
+  },
+
+  "hotbar_elipses_panel_right_art": {
+    "modifications": [
+      {
+        "control_name": "slot",
+        "operation": "remove"
+      }
+    ]
+  },
+
+  "hotbar_elipses_panel_left_art": {
+    "modifications": [
+      {
+        "control_name": "slot",
+        "operation": "remove"
+      }
+    ]
   },
 
   "hotbar_panel": {
@@ -102,8 +120,8 @@
 
   "hud_screen": {
     "$use_loading_bars": false,
-    "$screen_animations": [],
+    "$screen_animations": []
     // "always_accepts_input": true,
-    "render_only_when_topmost": false
+    // "render_only_when_topmost": false
   }
 }
