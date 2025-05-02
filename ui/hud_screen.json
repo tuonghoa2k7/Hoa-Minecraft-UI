@@ -1,4 +1,8 @@
 {
+  "exp_progress_bar_and_hotbar/resizing_xp_bar_with_hotbar/empty_progress_bar/full_progress_bar/progress_bar_nub": {
+    "max_size": [ 192, 5 ]
+  },
+
   "player_position": {
     "alpha": false,
     "size": ["100%cm", "100%cm"],
@@ -65,12 +69,16 @@
 
   "elipses_image": {
     "texture": "textures/ui/inventory_icon",
-    "$elipses_image_size|default": [ 19, 13 ],
+    "$elipses_image_size": [ 16, 10 ],
     "offset": [ 0, -1 ]
   },
 
   "hotbar_elipses_button": {
-    "offset": [-0.5, 0]
+    "$hotbar_elipses_button_size": [16, 16]
+  },
+
+  "start_cap_image": {
+    "alpha": 1
   },
 
   "hotbar_elipses_panel_right_art": {
@@ -100,6 +108,32 @@
           {
             "hoamcui:hotbar_left_content@hoamcui:hud.hotbar_left_content": {}
           }
+        ]
+      },
+      {
+        "control_name": "hotbar_elipses_panel_left",
+        "operation": "remove"
+      },
+      {
+        "array_name": "controls",
+        "operation": "insert_front",
+        "value": [
+          {
+            "hotbar_elipses_panel_left@hud.hotbar_elipses_panel_left_content": {}
+          }
+        ]
+      },
+      {
+        "control_name": "hotbar_elipses_panel_right",
+        "operation": "remove"
+      },
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          {
+            "hotbar_elipses_panel_right@hud.hotbar_elipses_panel_right_content": {}
+          }          
         ]
       }
     ]
