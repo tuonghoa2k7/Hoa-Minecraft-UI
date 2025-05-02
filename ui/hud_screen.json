@@ -154,8 +154,8 @@
 
   "hud_screen": {
     "$use_loading_bars": false,
-    "$screen_animations": []
+    "$screen_animations": [],
     // "always_accepts_input": true,
-    // "render_only_when_topmost": false
+    "render_only_when_topmost": false
   }
 }
