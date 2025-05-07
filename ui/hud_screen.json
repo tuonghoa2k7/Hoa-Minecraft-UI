@@ -68,7 +68,7 @@
 
   "elipses_image": {
     "texture": "textures/ui/inventory_icon",
-    "$elipses_image_size": [ 18, 12 ],
+    "$elipses_image_size": [ 19, 13 ],
     "offset": [ 0, -1 ]
   },
 
