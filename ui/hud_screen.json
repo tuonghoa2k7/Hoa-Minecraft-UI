@@ -1,6 +1,6 @@
 {
   "exp_progress_bar_and_hotbar/resizing_xp_bar_with_hotbar/empty_progress_bar/full_progress_bar/progress_bar_nub": {
-    "max_size": [ 194, 5 ]
+    "max_size": [194, 5]
   },
 
   "player_position": {
@@ -63,13 +63,13 @@
   },
 
   "hotbar_slot_selected_image": {
-    "size": [ 20, 20 ]
+    "size": [20, 20]
   },
 
   "elipses_image": {
     "texture": "textures/ui/inventory_icon",
-    "$elipses_image_size": [ 19, 13 ],
-    "offset": [ 0, -1 ]
+    "$elipses_image_size": [19, 13],
+    "offset": [0, -1]
   },
 
   "hotbar_elipses_button": {
