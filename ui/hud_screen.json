@@ -108,7 +108,7 @@
         "operation": "insert_front",
         "value": [
           {
-            "hotbar_start_cap@hud.hotbar_start_cap": {
+            "hotbar_elipses_start_cap@hud.hotbar_start_cap": {
               "bindings": [
                 {
                   "binding_name": "#hotbar_elipses_left_visible",
@@ -135,7 +135,7 @@
             "hotbar_elipses_panel_right@hud.hotbar_elipses_panel_right_content": {}
           },
           {
-            "hotbar_start_cap@hud.hotbar_start_cap": {
+            "hotbar_elipses_end_cap@hud.hotbar_start_cap": {
               "bindings": [
                 {
                   "binding_name": "#hotbar_elipses_right_visible",
