@@ -1,8 +1,8 @@
-// {
-//   "settings_content/background": {
-//     "$settings_gray_background_visible|default": true,
-//     "$settings_gray_background_alpha|default": 1,
-//     "ignored": "(not $settings_gray_background_visible)",
-//     "alpha": "$settings_gray_background_alpha"
-//   }
-// }
+{
+  "settings_content/background": {
+    "$settings_gray_background_visible|default": true,
+    "$settings_gray_background_alpha|default": 1,
+    "ignored": "(not $settings_gray_background_visible)",
+    "alpha": "$settings_gray_background_alpha"
+  }
+}
