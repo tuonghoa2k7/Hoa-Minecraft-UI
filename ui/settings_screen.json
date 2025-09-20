@@ -1,4 +1,8 @@
 {
+  "settings_screen_base":{
+    "$settings_spatial_pattern_fix_enabled": false
+  },
+
   "selector_stack_panel/how_to_play_button": {
     "ignored": "(not $help_button_visible)"
   },
