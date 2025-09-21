@@ -38,5 +38,29 @@
         }
       }
     ]
+  },
+
+  "hotbar_right_content@elm.empty_panel": {
+    "controls": [
+      {
+        "hotbar_right_stack@elm.stack": {
+          "orientation": "horizontal",
+          "size": [ "100%c", "100%cm" ],
+          "offset": [2, 22],
+          "anchor_from": "bottom_left",
+          "anchor_to": "bottom_left",
+          "use_child_anchors": true,
+          "$padding_size": [2, 0],
+          "controls": [
+            {
+              "tools_durability@hoamcui:tools_durability.mainhand_durability": {}
+            },
+            {
+              "padding@elm.padding": {}
+            }
+          ]
+        }
+      }
+    ]
   }
 }

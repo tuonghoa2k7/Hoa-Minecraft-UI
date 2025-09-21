@@ -23,7 +23,13 @@
 
   "number_of_days_played": {
     "$position_content_background_alpha|default": 0.4,
-    "alpha": "$position_content_background_alpha"
+    "alpha": "$position_content_background_alpha",
+    "bindings": [
+      {
+        "binding_name": "#hud_text_background_alpha",
+        "binding_name_override": ""
+      }
+    ]
   },
 
   "anim_chat_bg_wait@hoamcui:chat_anims.anim_chat_background_in_alpha": {},
@@ -120,6 +126,15 @@
           },
           {
             "hotbar_elipses_panel_left@hud.hotbar_elipses_panel_left_content": {}
+          }
+        ]
+      },
+      {
+        "array_name": "controls",
+        "operation": "insert_back",
+        "value": [
+          {
+            "hoamcui:hotbar_right_content@hoamcui:hud.hotbar_right_content": {}
           }
         ]
       },

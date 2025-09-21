@@ -13,7 +13,7 @@
     "type": "scroll_view"
   },
 
-  "cl:pnl": {
+  "collection": {
     "type": "collection_panel"
   },
 
